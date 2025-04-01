@@ -11,13 +11,15 @@
       </div>
     </div>
     <div class="row justify-content-center">
-      {% for blog in blog.blogs %}
-        <div class="col col-md-10 col-lg-8">
-          <h2 class="headline">{{ blog.headline }}</h2>
-          <h3 class="date">{{ blog.date }}</h3>
-          <a href="blog/{{}}"></a>
+      <div class="col col-md-10 col-lg-8">
+        <h2 class="section-header">Pirate blogs</h2>
+        {% for blog in blog.blogs %}
+        <h3 class='headline'><a href="blog/{{ blog.slug }}.html">{{ blog.headline }}</a></h2>
+        <p class="date">{{ blog.date }}</p>
+        <hr>
+  
 
-      {% endfor %}
+        {% endfor %}
       </div>
     </div>
   </div>

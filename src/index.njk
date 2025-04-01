@@ -14,11 +14,9 @@
       <div class="col col-md-10 col-lg-8">
         <h2 class="section-header">Pirate blogs</h2>
         {% for blog in blog.blogs %}
-        <h3 class='headline'><a href="blog/{{ blog.slug }}.html">{{ blog.headline }}</a></h2>
+        <h3 class='headline'><a href="blog/{{ blog.slug }}.html">{{ blog.headline }}</a></h3>
         <p class="date">{{ blog.date }}</p>
         <hr>
-  
-
         {% endfor %}
       </div>
     </div>
